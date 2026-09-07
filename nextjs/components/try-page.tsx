@@ -72,8 +72,10 @@ function Upload() {
     formData.append("post_image", postFile);
 
     try {
-      // Connect to the local FastAPI backend
-      const res = await fetch("http://localhost:8000/assess", {
+      // Use the environment variable, falling back to localhost for local development
+      const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      
+      const res = await fetch(`${baseUrl}/assess`, {
         method: "POST",
         body: formData,
       });
