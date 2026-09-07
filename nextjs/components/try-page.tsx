@@ -102,7 +102,7 @@ function Upload() {
           <span className="text-sm font-medium uppercase tracking-widest text-[color:var(--leaf)]">Try it</span>
           <h1 className="mt-3 font-display text-4xl md:text-5xl font-semibold">Upload a pair. See the damage.</h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Drop in a pre- and post-disaster satellite image. TerraSight validates, pairs and normalises them — then
+            Drop in a pre- and post-disaster satellite image. TerraSight validates, pairs and normalises them, then
             runs classification, segmentation and Grad-CAM in one pass.
           </p>
         </div>
